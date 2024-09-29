@@ -111,7 +111,7 @@ export async function typescript(
       : [makeParser(false, files)]),
     {
       files,
-      name: "in5net/typescript/rules",
+      name: "iz7n/typescript/rules",
       rules: {
         ...renameRules(
           pluginTs.configs["eslint-recommended"].overrides![0].rules!,

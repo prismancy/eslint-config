@@ -89,5 +89,5 @@
     "eslint": "^9.10.0",
     "tsx": "^4.19.1"
   },
-  "prettier": "@in5net/prettier-config"
+  "prettier": "@iz7n/prettier-config"
 }

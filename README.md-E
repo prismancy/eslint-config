@@ -505,7 +505,7 @@ You can optionally enable the [type aware rules](https://typescript-eslint.io/li
 // eslint.config.js
 import in5net from "@in5net/eslint-config";
 
-export default in5net({
+export default iz7n({
   typescript: {
     tsconfigPath: "tsconfig.json",
   },

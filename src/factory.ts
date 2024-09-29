@@ -42,7 +42,7 @@ const flatConfigProps = [
 export const defaultPluginRenaming = {
   "@typescript-eslint": "ts",
   "import-x": "import",
-  n: "node",
+  "n": "node",
 };
 
 /**
@@ -52,7 +52,7 @@ export const defaultPluginRenaming = {
  * @returns
  * The merged ESLint configurations.
  */
-export function iz7n(
+export function in5net(
   options: OptionsConfig & TypedFlatConfigItem = {},
   ...userConfigs: Array<
     Awaitable<
@@ -78,18 +78,18 @@ export function iz7n(
   if (enableGitignore) {
     if (typeof enableGitignore !== "boolean") {
       configs.push(
-        interopDefault(import("eslint-config-flat-gitignore")).then((r) => [
+        interopDefault(import("eslint-config-flat-gitignore")).then(r => [
           r({
-            name: "iz7n/gitignore",
+            name: "in5net/gitignore",
             ...enableGitignore,
           }),
         ]),
       );
     } else {
       configs.push(
-        interopDefault(import("eslint-config-flat-gitignore")).then((r) => [
+        interopDefault(import("eslint-config-flat-gitignore")).then(r => [
           r({
-            name: "iz7n/gitignore",
+            name: "in5net/gitignore",
             strict: false,
           }),
         ]),
@@ -99,9 +99,9 @@ export function iz7n(
 
   const typescriptOptions = resolveSubOptions(options, "typescript");
   const tsconfigPath =
-    "tsconfigPath" in typescriptOptions
-      ? typescriptOptions.tsconfigPath
-      : undefined;
+    "tsconfigPath" in typescriptOptions ?
+      typescriptOptions.tsconfigPath
+    : undefined;
 
   configs.push(
     ignores(options.ignores),
